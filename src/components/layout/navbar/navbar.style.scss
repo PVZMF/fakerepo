@@ -1,5 +1,6 @@
 @import "../../../styles/variable.scss";
 .Navbar {
+  z-index: 1;
   background-color: $primaryColor;
   a {
     color: $textSecondary;

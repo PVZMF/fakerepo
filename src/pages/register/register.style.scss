@@ -1,0 +1,64 @@
+@import "../../styles/variable.scss";
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    form{
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 30px;
+        .submitForm{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 5px 40%;
+            font-weight: 500;
+            font-size: medium;
+            color: $textSecondary;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: $textPrimary;
+            &:hover{
+                background-color: $hoverColor;
+            }
+        }
+        .inputForm{
+            border-radius: 5px;
+            box-shadow: none;
+        }
+    }
+    .Label{
+        display: inline-block;
+        width: 100px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+    }
+
+}
+@media only screen and (min-width: 790px) {
+    .register{
+        height: 100vh;
+        width: 100%;
+        form{
+            padding: 30px;
+            margin-top: 150px;
+            width: 50%;
+            .submitForm{
+                align-self: center;
+                padding: 5px 43%;
+            }
+            .inputForm{
+                width: 70%;
+                margin: 10px;
+                height: 30px;
+            }
+        }
+        .Label{
+            width: 20%;
+        }
+    }
+}

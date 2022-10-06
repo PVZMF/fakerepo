@@ -101,7 +101,7 @@ const Categories = () => {
             </h1>
             <div className="product__list">
               {productList.map((p, index) => (
-                <Card id={index} {...p} />
+                <Card id={index} href={p.name} {...p} />
               ))}
             </div>
           </div>

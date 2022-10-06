@@ -78,17 +78,17 @@ const Home = () => {
       <Container>
         <CardList className="mt-1" title={"دسته بندی اول"} href="/categories/1">
           {products.map((item, index) => (
-            <Card key={index} {...item} />
+            <Card key={index} href={item.name} {...item} />
           ))}
         </CardList>
         <CardList className="mt-1" title={"دسته بندی دوم"} href="/categories/2">
           {products.map((item, index) => (
-            <Card key={index} {...item} />
+            <Card key={index} href={item.name} {...item} />
           ))}
         </CardList>
         <CardList className="mt-1" title={"دسته بندی سوم"} href="/categories/3">
           {products.map((item, index) => (
-            <Card key={index} {...item} />
+            <Card key={index} href={item.name} {...item} />
           ))}
         </CardList>
       </Container>

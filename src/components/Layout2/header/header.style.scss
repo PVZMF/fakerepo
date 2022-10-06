@@ -1,0 +1,25 @@
+@import "../../../styles/variable.scss";
+
+.Header2{
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: initial;
+    height: 40vh;
+    background-color: $primaryColor;
+    h1{
+        font-size: medium;
+        font-weight: 500;
+        color: $textSecondary;
+    }
+    
+}
+
+@media only screen and (min-width: 790px) {
+    .Header2{
+        height: 50vh;
+        h1{
+            font-size:25px;
+        }
+    }
+}

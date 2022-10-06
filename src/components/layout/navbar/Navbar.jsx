@@ -36,7 +36,7 @@ const Navbar = () => {
               </IconButton>
             </li>
             <li>
-              <IconButton>
+              <IconButton href="/login">
                 <UserIcon />
               </IconButton>
             </li>

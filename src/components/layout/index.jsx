@@ -3,7 +3,8 @@ import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import { Outlet } from "react-router-dom";
-const Layout = () => {
+
+export const Layout = () => {
   return (
     <React.Fragment>
       <Navbar />
@@ -16,4 +17,14 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export const Layout1 = () => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </React.Fragment>
+  );
+};

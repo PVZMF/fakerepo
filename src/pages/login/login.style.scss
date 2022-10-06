@@ -1,0 +1,41 @@
+@import "../../styles/variable.scss";
+
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    form{
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 30px;
+        .submitForm{
+            padding: 5px 40%;
+            color: $textSecondary;
+            font-weight: 500;
+            font-size: medium;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: $textPrimary;
+            &:hover{
+                background-color: $hoverColor;
+            }
+        }
+        .inputForm{
+            border-radius: 5px;
+            box-shadow: none;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+    .Label{
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        font-weight: 500;
+    }
+
+}
